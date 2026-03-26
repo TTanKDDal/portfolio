@@ -1,0 +1,8 @@
+.link-buttom {
+    text-decoration: none;
+    display: flex;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    
+}
