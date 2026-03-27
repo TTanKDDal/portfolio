@@ -1,0 +1,31 @@
+/* css variable*/
+:root {
+    /* color */
+    --white: #ffffff;
+    --black: #000000;
+    --gray900: #282828; /* 기본 글자 색*/
+    --gray800: #454545;
+    --gray700: #5e5e5e;
+    --gray600: #787878;
+    --gray500: #919191;
+    --gray400: #ababab;
+    --gray300: #c4c4c4;
+    --gray200: #dedede;
+    --gray100: #f7f7f7;
+    --green: #167a47;
+
+    /* font */
+    --font12: 12px;
+    --font14: 14px;
+    --font16: 16px;
+    --font18: 18px;
+    --font20: 20px;
+    --font24: 24px;
+    --font26: 26px;
+    --font30: 30px;
+    --font36: 36px;
+
+    --font-w400: 400;
+    --font-w600: 600;
+
+}
