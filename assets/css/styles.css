@@ -7390,11 +7390,14 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  /* background-color: #1abc9c !important; */
+  width: 100%; 
+  overflow: hidden;
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-color: #000 !important;
+  opacity: 0.5;
 }
 
 .bg-success {
@@ -10978,9 +10981,9 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
-}
+  /* padding-top: calc(6rem + 74px);
+  /* padding-bottom: 6rem;* */
+} 
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
@@ -10994,8 +10997,8 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    /* padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem; */
   }
   .masthead .masthead-heading {
     font-size: 4rem;

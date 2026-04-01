@@ -1,0 +1,84 @@
+gsap.registerPlugin(ScrollTrigger);
+
+// 🔹 단어 내부 span 감싸기 (마스크용)
+document.querySelectorAll(".word").forEach(word => {
+  let text = word.innerText;
+  word.innerHTML = "<span>" + text + "</span>";
+});
+
+// 🎬 비디오 스크롤 연동
+const video = document.querySelector(".video");
+
+video.addEventListener("loadedmetadata", () => {
+  let duration = video.duration;
+
+  gsap.to(video, {
+    currentTime: duration,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".main",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: true
+    }
+  });
+});
+
+// 🧠 텍스트 등장 애니메이션 (마스크)
+gsap.to(".word span", {
+  y: "0%",
+  ease: "power4.out",
+  stagger: 0.3,
+  scrollTrigger: {
+    trigger: ".main",
+    start: "top 30%",
+    end: "top -20%",
+    scrub: 1
+  }
+});
+
+// 🌊 패럴랙스 (깊이감)
+gsap.to(".text-area", {
+  y: -150,
+  scrollTrigger: {
+    trigger: ".main",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true
+  }
+});
+
+// 🌑 오버레이 밝기 변화
+gsap.to(".overlay", {
+  background: "rgba(0,0,0,0.7)",
+  scrollTrigger: {
+    trigger: ".main",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true
+  }
+});
+
+const title = document.querySelector(".title");
+const text = title.innerText;
+
+title.innerHTML = text
+  .split("")
+  .map(char => {
+    if (char === " ") return `<span class="char">&nbsp;</span>`;
+    return `<span class="char">${char}</span>`;
+  })
+  .join("");
+
+gsap.to(".char", {
+  y: 0,
+  opacity: 1,
+  stagger: 0.03,
+  ease: "power4.out",
+  scrollTrigger: {
+    trigger: ".main",
+    start: "top 40%",
+    end: "top 0%",
+    scrub: 1
+  }
+});
