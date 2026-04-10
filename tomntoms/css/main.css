@@ -1,0 +1,154 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray900: #282828; /* 기본 글자 색*/
+    --gray800: #454545;
+    --gray700: #5e5e5e;
+    --gray600: #787878;
+    --gray500: #919191;
+    --gray400: #ababab;
+    --gray300: #c4c4c4;
+    --gray200: #dedede;
+    --gray100: #f7f7f7;
+    --red: #fc0303;
+    --skyblue: #4dd0e1;
+    --brown: #571c1f;
+
+    /* font */
+    --font12: 12px;
+    --font14: 14px;
+    --font16: 16px;
+    --font18: 18px;
+    --font20: 20px;
+    --font24: 24px;
+    --font26: 26px;
+    --font30: 30px;
+    --font36: 36px;
+
+    --font-w400: 400;
+    --font-w600: 600;
+
+
+}
+
+/* 메인비주얼 */
+.visual {
+    width: 100%;
+    height: 830px;
+    background-image: url(../img/main-slide.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, top;
+}
+
+/* 메뉴 */
+.sec-menu {
+    background-color: var(--gray100);
+    padding: 150px 0 168px 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.menu article {
+    width: 272px;
+}
+.menu article .img-area {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+.menu article a .img-area img {
+    transition: transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+.menu article a .img-area:hover img {
+     transform: scale(1.1); /* 1.1배 확대 */
+}
+.menu article .text-area {
+    padding: 35px 0 0 0 ;
+    
+}
+.menu article .text-area p {
+    font-size: var(--font26);
+    color: var(--gray900);
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.menu article .text-area p::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* 밑줄 두께 */
+  bottom: 0;
+  left: 50%; /* 중앙에서 시작 */
+  background-color: var(--gray900); /* 밑줄 색상 */
+  transition: all 0.3s ease-in-out;
+}
+.menu article .text-area p:hover::after {
+    width: 100%;
+    left: 0; /* 중앙에서 양옆으로 확장 */
+}
+/* 이벤트 */
+.sec-event {
+    padding: 150px 0 90px;
+}
+.sec-event .event {
+    height: 933px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-image: url(../img/event-slide.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    font-family: 'Galmuri11';
+    position: relative;
+}
+.sec-event .event .text-area {
+    position: absolute;
+    bottom: 217px;
+    right: 390px;
+}
+.sec-event .event .btn-area {
+    text-align: center;
+    margin-bottom: 29px;
+    position: relative;
+}
+.sec-event .event p {
+    color: var(--white);
+    font-size: var(--font26);
+    font-weight: var(--font-w600);
+    text-align: left;
+    text-transform: uppercase;
+}
+.sec-event .event p span:first-child {
+    color: var(--skyblue);
+} 
+.sec-event .event p span:nth-child(2) {
+    color: var(--red);
+}
+.sec-event .event .btn-area a {
+    display: block;
+    width: 331px;
+    height: 116px;
+    color: var(--black);
+    font-size: var(--font36);
+    font-weight: var(--font-w600);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(78, 76, 76, 0.5);
+    border-radius: 70px;
+    text-align: center;
+    line-height: 116px;
+    position: absolute;
+    top: 788px;
+    right: 556px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 부드러운 전환 효과 */
+}
+.sec-event .event .btn-area a:hover {
+    background-color: rgba(78, 76, 76, 0.5); /* 배경색 변경 */
+    color: #ffffff;
+}

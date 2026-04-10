@@ -1,0 +1,111 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray900: #282828; /* 기본 글자 색*/
+    --gray800: #454545;
+    --gray700: #5e5e5e;
+    --gray600: #787878;
+    --gray500: #919191;
+    --gray400: #ababab;
+    --gray300: #c4c4c4;
+    --gray200: #dedede;
+    --gray100: #f7f7f7;
+    --red: #fc0303;
+    --skyblue: #4dd0e1;
+    --brown: #571c1f;
+
+    /* font */
+    --font12: 12px;
+    --font14: 14px;
+    --font16: 16px;
+    --font18: 18px;
+    --font20: 20px;
+    --font24: 24px;
+    --font26: 26px;
+    --font30: 30px;
+    --font36: 36px;
+
+    --font-w400: 400;
+    --font-w600: 600;
+}
+/* 이벤트섹션 */
+.sec-event {
+    padding: 150px 0 90px;
+}
+.sec-event .container {
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px 49px 20px;
+    gap: 20px;
+}
+.sec-event .container article {
+    width: 453px;
+    border: 1px solid var(--gray600);
+    border-radius: 15px;
+}
+.sec-event .container article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sec-event .container article:hover {
+    transform: translateY(-10px) scale(1.05); /* 위로 이동 및 확대 */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* 그림자 강화 */
+}
+.sec-event .container .done-wrap {
+    position: relative;
+}
+.sec-event .container .done-wrap .finish {
+    opacity: 0.8;
+}
+.sec-event .container .done-wrap .finish::after {
+    content: "이벤트 기간이 아닙니다"; /* 종료 문구 표시 가능 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* 검은색 반투명 */
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.87rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.sec-event .container article .img-area {
+    width: 100%;
+    height: 364px;
+    overflow: hidden;
+}
+.sec-event .container article .text-area {
+    width: 100%;
+    height: 226px;
+    padding: 39px 42px;
+}
+.sec-event .container article .text-area .btn {
+    width: 92px;
+    height: 37px;
+    font-size: var(--font18);
+    border: 1px solid var(--gray900);
+    border-radius: 19px;
+    text-align: center;
+    line-height: 37px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+.sec-event .container article .text-area p:nth-child(2) {
+    font-size: var(--font20);
+    padding-bottom: 5px;
+}
+.sec-event .container article .text-area p:last-child {
+    font-size: var(--font18);
+}
+.sec-event .container .ing-wrap .text-area .btn {
+    background-color: var(--brown);
+}
+.sec-event .container .done-wrap .text-area .btn {
+    background-color: var(--gray500);
+}
