@@ -72,15 +72,39 @@ video {
   background-color: black;
     
 }
+/* 포트폴리오 아이템 */
+.project .items {
+  position: relative;
+}
+.project .items .text-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
+/* about */
 .page-section .row {
   display: flex;
 }
 .pro-pic img {
   width: 100%
 }
+/* modal 상세페이지 */
 .popup {
   position: relative;
+}
+.popup .title-text {
+  color: #282828;
+  padding-bottom: 20px ;
+  
 }
 .popup .btn-area {
   width: 100%;

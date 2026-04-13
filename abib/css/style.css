@@ -1,0 +1,306 @@
+/* header*/
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo img {
+    /*  brandname svg wikimedia png 저장시 2배 해상도*/
+    height: 36px; /* 32~36px  실크기 w140-h36px, 저장시 w280-h72px*/
+    width: auto;
+    display: block;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between; /* 가로 끝으로 정렬*/
+    align-items: center; /* 세로정렬*/
+    padding: 24px 8%; /* 상하 좌우 안 여백 */
+}  
+  
+.nav a {
+    margin-left: 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+main {
+    height: 100vh; /* 화명 꽉차게 100% 높이*/
+    background: url(../img/main_visual.jpg) no-repeat center/ cover ;
+
+        /* 반복없이 가운데 위치 전체 사이즈로 배경이미지 */
+}
+section {
+    padding: 60px 8%; 
+}
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px; /* 16~24xpx */
+}
+h3 {
+    font-size: 1.5rem;
+}
+.se1 {
+    background:url() no-repeat center/cover;
+}
+.ct1 {
+    /* 큰 박스 */
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 120px;
+}
+.sec1  h2, .sec1 p {
+    /* 서브 타이틀 */ 
+    text-align: center;
+    margin-bottom: 24px;
+}
+.c1 { /* 작은 박스 */
+    flex: 1; /* 같은 비율로 들어간다. */
+}
+.c1 h3, .c1 p {
+    text-align: start;
+    margin-top: 16px;
+    padding-left: 5px;
+}
+.c1 img {
+    width: 100%;
+    border-radius: 15px 15px 0 0 ;
+}
+.sec1 .ct1 .c1 span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+.sec1 .ct1 .c1 p {
+    font-size: 1rem;
+}
+.sec2 {
+    max-width: 1920px;
+    background-color: #eee;
+}
+.sec2 .ct2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 120px;
+}
+.sec2 .ct2 .c2 {
+    width: calc(30%-16px);
+    background-color: #ddd;
+    border-radius: 15px;
+    
+}
+.sec2 .ct2 .c2 img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+}
+.sec2 .ct2 .c2 h3 {
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+.sec2 .ct2 .c2 span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+}
+.sec2 .ct2 .c2 p {
+    font-size: 1rem;
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.sec3 {
+    display: flex;
+    align-items: center;
+    gap: 80px;              /*40 32 24 16*/
+    padding: 0 40px;        /* 좍우여백 30, 20, 10px*/
+}
+.sec3 .ct3-img {
+    flex: 0.5;
+        /* 이미지 가로 중앙 */
+}
+.sec3 .ct3-img img {
+    width: 100%;
+    height: 550px;
+    aspect-ratio: 1/1;
+    border-radius: 24px;
+}
+.sec3 .ct3-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.sec3 .ct3-text h3 {
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+.sec3 .ct3-text p {
+    line-height: 1.8;
+}
+/* https://fontawesome.com/v4/ 폰트어썸 CDN주소*/
+footer {
+    background-color: #242424;
+    color: white;
+    padding: 40px 50px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.footer-left {
+    margin-left: 80px;
+}
+.foot-logo {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flogo {
+    width: 60px;
+    display: block;
+    margin-bottom: 36px;
+    filter: invert(100%);
+}
+.footer-right {
+    display: flex;
+}
+.sns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.sns a {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: 0.3 ease;
+}
+.footer-item {
+    flex: 1;
+    min-width: 200px;
+}
+.footer-item h3 {
+    font-size: 1.25rem;
+}
+.footer-item a {
+    display: block;
+    color: darkgray;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: 0.3 ease;
+}
+.icons {
+    display: flex;
+    gap: 30xp;
+    margin-top: 0px;
+}
+.copy {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: darkgray;
+}
+.v1 {
+    width: fit-content;
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+}
+video {
+    width: 80%;
+    height: 70vh;      /* 화면 높이 전체 */
+    object-fit: cover;  /* 비율 유지하며 가득 채움 */
+}  
+
+/* hover*/
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333; /* 밑줄 색상 */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.ct1 .c1:hover {
+        transform: rotate(15deg); /* 회전 */ 
+        transform: scale(1.1); /* 110% 확대*/
+        /*transform: scale(0.8);  80% 축소 */
+        /*transform: translate(20px, 30px);  가로 세로  이동*/
+        /*transform: translateX(20px);  오른쪽 이동*/
+        /*transform: translateY(20px);  아래 이동*/
+        /* transform: translateY(-20px); 위로 이동 */ 
+        transition: 1s ease; 
+
+}
+.ct2 .c2:hover {
+    transform: rotate(15deg);
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.sns a:hover {
+    transform: rotate(15deg);
+    transform: scale(1.5);
+    color: #fff;
+}
+
+.footer-item a:hover {
+    transform: scale(1.1);
+    transform: translateY(-4px);
+    color: #fff;
+
+}
+/* .ct2 .c2 {
+    width: 30%;
+    height: 300px;
+    background: url(../img/ab06.jpg) no-repeat center/cover;
+}*/
+/*.ct2 .c2:hover {  hover시 그림 교체 
+    background: url(../img/ab07.jpg) no-repeat center/cover;
+    transition: 1s ease;
+}  */
+
+/* hover시 사이즈 변화 */
+/* .ct3 .c3 {
+    width: 50%;
+    height: 300px;
+    background: url(../img/ab06.jpg) no-repeat center/cover;
+}
+.ct3 .c3:hover { 
+    background-size: 150% 150%;
+} */
