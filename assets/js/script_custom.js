@@ -58,27 +58,3 @@ gsap.to(".overlay", {
     scrub: true
   }
 });
-
-const title = document.querySelector(".title");
-const text = title.innerText;
-
-title.innerHTML = text
-  .split("")
-  .map(char => {
-    if (char === " ") return `<span class="char">&nbsp;</span>`;
-    return `<span class="char">${char}</span>`;
-  })
-  .join("");
-
-gsap.to(".char", {
-  y: 0,
-  opacity: 1,
-  stagger: 0.03,
-  ease: "power4.out",
-  scrollTrigger: {
-    trigger: ".main",
-    start: "top 40%",
-    end: "top 0%",
-    scrub: 1
-  }
-});

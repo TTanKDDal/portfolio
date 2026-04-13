@@ -4,15 +4,18 @@ body {
 }
 img,
 video {
-    max-width: 100%;
-    vertical-align: top;
+  max-width: 100%;
+  vertical-align: top;
 }
 .main {
-    width: 100%;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
-
+.page-section-heading {
+  width: 100%;
+  height: 8vh;
+}
 /* 🎬 video */
 .video {
   position: fixed;
@@ -21,6 +24,7 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
 }
 
 /* 🌑 어두운 오버레이 */
@@ -28,7 +32,8 @@ video {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.1);
+  z-index: -1;
 }
 
 /* 🧠 텍스트 */
@@ -60,24 +65,19 @@ video {
 }
 
 .link-buttom {
-    text-decoration: none;
-    display: flex;
-    width: 120px;
-    height: 40px;
-    background-color: black;
+  text-decoration: none;
+  display: flex;
+  width: 120px;
+  height: 40px;
+  background-color: black;
     
 }
-.char {
-  display: inline-block;
-  transform: translateY(100%);
-  opacity: 0;
-}
+
 .page-section .row {
   display: flex;
 }
 .pro-pic img {
-  width: 300px;
-  height: 500px;
+  width: 100%
 }
 .popup {
   position: relative;

@@ -7340,7 +7340,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: #2c3e50 !important;
+  color: #fff !important;
 }
 
 .text-success {
@@ -7392,7 +7392,7 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  /* background-color: #1abc9c !important; */
   width: 100%; 
   overflow: hidden;
 }
