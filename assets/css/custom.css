@@ -28,13 +28,13 @@ video {
 }
 
 /* 🌑 어두운 오버레이 */
-.overlay {
+/* .overlay {
   position: fixed;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.1);
   z-index: -1;
-}
+} */
 
 /* 🧠 텍스트 */
 .text-area {
@@ -82,7 +82,7 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -93,6 +93,13 @@ video {
 /* about */
 .page-section .row {
   display: flex;
+}
+.page-section .row .produce-text {
+  margin-top: 100px;
+  height: 400px;
+}
+.page-section .row .education {
+  margin-top: 60px;
 }
 .pro-pic img {
   width: 100%
