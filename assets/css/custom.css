@@ -139,7 +139,6 @@ header .main .sub-text p {
 }
 .page-section .row .produce-text {
   margin-top: 100px;
-  height: 400px;
 }
 .page-section .row .produce-text p:nth-child(1) {
   font-family: 'franciscodemo';
@@ -231,6 +230,16 @@ header .main .sub-text p {
 #contact .con-area .text-wrap p:nth-child(3) {
   font-size: 1rem;
 }
+@media screen and (min-width:360px) and (max-width:575px){
+  #contact .con-area {
+    display: flex;
+    flex-direction: column
+  }
+  #contact .con-area .con-icon {
+    flex-direction: row;
+  }
+}
+
 
 /* modal 상세페이지 */
 .popup {
