@@ -37,15 +37,6 @@ video {
   z-index: -1;
 }
 
-/* 🌑 어두운 오버레이 */
-/* .overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.1);
-  z-index: -1;
-} */
-
 /* 🧠 텍스트 */
 .text-area {
   position: sticky;
@@ -81,6 +72,26 @@ video {
   height: 40px;
   background-color: black;
     
+}
+/* 메인 비주얼 */
+header .main .sub-text {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  /* transform: translateY(-50%) !important;  */
+  text-align: end;
+}
+header .main .sub-text span {
+  font-family: 'Golden Plains - Demo';
+  font-size: 2rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, blue, skyblue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+header .main .sub-text p {
+
 }
 /* 포트폴리오 아이템 */
 .project .items {
@@ -181,6 +192,45 @@ video {
   }
 }
 /* contact */
+#contact .con-area {
+  display: flex;
+}
+#contact .con-area .con-icon {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  margin: 0 auto;
+  gap: 30px;
+  align-items: end;
+  justify-content: center;
+  
+  transition: 0.4s ease;
+}
+#contact .con-area .con-icon a {
+  width: 64px;
+}
+#contact .con-area .con-icon a:hover {
+  transform: scale(1.1);
+}
+#contact .con-area .con-icon a img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.3);
+}
+#contact .con-area .text-wrap {
+  padding: 10px;
+  margin: 0 auto;
+  color: #fff;
+}
+#contact .con-area .text-wrap p {
+  font-size: 1.5rem;
+}
+#contact .con-area .text-wrap p:nth-child(2) {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+#contact .con-area .text-wrap p:nth-child(3) {
+  font-size: 1rem;
+}
 
 /* modal 상세페이지 */
 .popup {
