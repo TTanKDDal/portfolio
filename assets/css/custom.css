@@ -252,11 +252,9 @@ header .main .sub-text span {
   width: 100%;
   /* height: 5vh; */
   display: flex;
-  padding: 10px 0;
+  
 }
-.popup .btn-area img {
-  padding-top: 20px;
-}
+
 .popup a {
   width: 100px;
   /* height: 30px; */
