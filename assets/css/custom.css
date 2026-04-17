@@ -172,11 +172,35 @@ header .main .sub-text span {
   left: 0;
   transform: translateY(-180%);
 }
+#about .marquee .box-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+#about .marquee .box-blur .box {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  transform: translateY(-40%);
+}
+#about .marquee .box-blur .box:nth-child(1) {
+  left: 0;
+  background: linear-gradient(to left, transparent, #000) ;
+}
+#about .marquee .box-blur .box:nth-child(2) {
+  right: 0;
+  background: linear-gradient(to right, transparent, #000) ;
+}
 .track {
   display: flex;
   width: max-content;
   animation: scroll 25s linear infinite;
 }
+
 .icon {
   width: 60px;
   height: 60px;
