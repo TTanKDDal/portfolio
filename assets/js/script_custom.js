@@ -32,7 +32,7 @@ gsap.to(".word span", {
   scrollTrigger: {
     trigger: ".main",
     start: "top 30%",
-    end: "top -20%",
+    end: "top -30%",
     scrub: 1
   }
 });
@@ -48,14 +48,5 @@ gsap.to(".text-area", {
   }
 });
 
-// 🌑 오버레이 밝기 변화
-gsap.to(".overlay", {
-  background: "rgba(0,0,0,0.7)",
-  scrollTrigger: {
-    trigger: ".main",
-    start: "top top",
-    end: "bottom bottom",
-    scrub: true
-  }
-});
+
 

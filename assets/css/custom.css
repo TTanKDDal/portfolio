@@ -73,6 +73,16 @@ video {
   background-color: black;
     
 }
+/* navbar */
+.navbar .bg-primary {
+  width: auto;
+}
+@media screen and (min-width:575px) {
+  #mainNav a br {
+    display: none;
+  }
+}
+
 /* 메인 비주얼 */
 header .main .sub-text {
   position: absolute;
@@ -257,7 +267,6 @@ header .main .sub-text span {
 .popup a {
   width: 100px;
   background-color: #a7d6ff;
-  border: 1px solid #aaa;
   border-radius: 10px;
   margin: 4px 10px;
   text-align: center;
