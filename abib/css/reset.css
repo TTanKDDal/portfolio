@@ -1,23 +1,41 @@
- /*reset*/
-* {
+@charset 'utf-8' ;
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-img {
-    vertical-align: top;
-    width: 100%;
-    display: block;
+ul,
+ol,
+li {
+    list-style: none;
 }
 a {
     text-decoration: none;
     color: inherit;
 }
-body {
-    font-family: 'noto sans kr', sans-serif;
-    color: #2f2f2f;
-    background-color: #fff;
-    line-height: 1.6;
-
+img,
+video {
+    max-width: 100%;
+    vertical-align: top;
 }
-
+button {
+    all: unset;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+blockquote, /* 인용문 스타일 초기화*/
+q {
+    quotes: none;  
+}
+em,
+i,
+address { /* 기울여진 italic체 기본형태로 초기화*/
+    font-style: normal;
+}
