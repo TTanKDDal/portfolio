@@ -18,12 +18,45 @@ header {
     justify-content: space-between; /* 가로 끝으로 정렬*/
     align-items: center; /* 세로정렬*/
     padding: 24px 8%; /* 상하 좌우 안 여백 */
+    position: relative;
 }  
   
 .nav a {
     margin-left: 32px;
     font-size: 14px;
     font-weight: bold;
+}
+.header-inner .btn-wrap {
+    display: none;
+}
+.header-inner .btn-wrap button {
+    transition: transform 0.3s ease;
+}
+.header-inner .btn-wrap button:hover {
+    transform: scale(1.2);
+}
+.header-inner .btn-wrap .nav-bar {
+    width: 140px;
+    padding: 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 53.8%);
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+}
+.header-inner .btn-wrap .nav-bar li {
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+.header-inner .btn-wrap .nav-bar li:hover {
+    color: green;
+}
+@media screen and (max-width: 767px) {
+    .header-inner .nav {display: none;}
+    .header-inner .btn-wrap {
+        display: block;
+    }
 }
 /* main */
 .main-visual img {
