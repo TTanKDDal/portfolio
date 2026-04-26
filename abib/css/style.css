@@ -118,6 +118,9 @@ h3 {
 .sec1 .ct1 .c1 p {
     font-size: 1rem;
 }
+@media screen and (max-width: 480px) {
+    .ct1 {flex-direction: column;}
+}
 /* 섹션2 */
 .sec2 {
     max-width: 1920px;
