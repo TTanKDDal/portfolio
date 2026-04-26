@@ -33,23 +33,24 @@ header {
 .header-inner .btn-wrap button {
     transition: transform 0.3s ease;
 }
-.header-inner .btn-wrap button:hover,
-.header-inner .btn-wrap button:hover .nav-bar  {
+.header-inner .btn-wrap button:hover {
     transform: scale(1.2);
-    opacity: 1;
 }
-
 .header-inner .btn-wrap .nav-bar {
+    display: none;
     width: 140px;
     padding: 10px 10px;
     position: absolute;
     top: 230%;
-    right: -210%;
+    right: -300%;
     background-color: rgba(255, 255, 255, 0.8);
-    opacity: 0;
+    /* opacity: 0; */
     z-index: 1;
 }
-
+.header-inner .btn-wrap button:hover .nav-bar {
+    /* opacity: 1; */
+    display: block;
+}
 .header-inner .btn-wrap .nav-bar li {
     margin-bottom: 4px;
     cursor: pointer;
@@ -63,7 +64,7 @@ header {
         position: absolute;
     }
     .header-inner .btn-wrap {
-        display: block;
+        display: inline-block;
     }
 }
 /* main */
