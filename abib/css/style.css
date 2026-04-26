@@ -53,7 +53,10 @@ header {
     color: green;
 }
 @media screen and (max-width: 767px) {
-    .header-inner .nav {display: none;}
+    .header-inner .nav {
+        display: none;
+        position: absolute;
+    }
     .header-inner .btn-wrap {
         display: block;
     }
@@ -189,7 +192,7 @@ h3 {
 .sec3 .ct3-text p {
     line-height: 1.8;
 }
-/* ✅ 반응형 (모바일) */
+/*  반응형 (모바일) */
 @media (max-width: 768px) {
   .review {
     flex-direction: column; /* 🔥 세로 배치 */
@@ -245,9 +248,6 @@ footer {
     margin-bottom: 36px;
     filter: invert(100%);
 }
-.footer-right {
-    display: flex;
-}
 .sns {
     display: flex;
     flex-direction: row;
@@ -263,9 +263,9 @@ footer {
     padding: 5px 0;
     transition: 0.3 ease;
 }
-.footer-item {
-    flex: 1;
-    min-width: 200px;
+.footer-right {
+    display: flex;
+    gap: 20px;
 }
 .footer-item h3 {
     font-size: 1.25rem;
@@ -276,6 +276,17 @@ footer {
     text-decoration: none;
     margin-bottom: 8px;
     transition: 0.3 ease;
+}
+@media screen and (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-left {
+        margin-left: 0;
+    }
+    .footer-right {
+        justify-content: center;
+    }
 }
 .icons {
     display: flex;
