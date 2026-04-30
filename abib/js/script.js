@@ -1,8 +1,8 @@
 $(function(){
-    $('.btn-wrap').mouseover(function(){
-        $(this).find('.nav-bar').slideDown();
+    $('.btn-wrap').mouseenter(function(){
+        $(this).children('.nav-bar').stop().slideDown();
     }).mouseleave(function(){
-        $('.nav-bar').slideUp();
+        $(this).children('.nav-bar').stop().slideUp();
     });
 
 });
